@@ -9,5 +9,8 @@
 <body>
     <h1>Hello again!</h1>
     {{ projects }}
+    {% for project in projects %}
+        <p>{{ project.description }}</p>
+    {% endfor %}
 </body>
 </html>
