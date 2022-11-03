@@ -12,7 +12,7 @@
     <h1>Hello again!</h1>
     {% for project in projects %}
         <h1>{{ project.title }}</h1>
-        <img src="{% static 'projects/img/candycrush.gif' %}" alt="screenshot of project">
+        <img src="{% static 'project.image' %}" alt="screenshot of project">
         <p>{{ project.description }}</p>
         <p>{{ project.technology }}</p>
     {% endfor %}
