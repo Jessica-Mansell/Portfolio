@@ -11,6 +11,6 @@ def all_projects(request):
                     {'projects': projects})
 
 def project_detail(request, pk):
-    project = project.objects.get(pk=pk)
+    project = Project.objects.get(pk=pk)
     return render(request, 'projects/detail.html', 
                     {'project': project})
