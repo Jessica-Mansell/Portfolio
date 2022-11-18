@@ -2,6 +2,8 @@ from http.client import HTTPResponse
 from projects.models import Project
 from django.shortcuts import render
 
+def about_me(request):
+    return render(request, 'projects/about_me.html')
 
 def all_projects(request):
     # query the db to return all project objects
