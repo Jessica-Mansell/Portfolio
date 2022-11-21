@@ -16,5 +16,5 @@ def project_detail(request, pk):
     return render(request, 'projects/detail.html', 
                     {'project': project})
 
-def base(request):
-    return render(request, 'projects/base.html')
+def home(request):
+    return render(request, 'projects/home.html')

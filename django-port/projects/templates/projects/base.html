@@ -13,28 +13,15 @@
 <body>
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="{% url 'projects:base' %}">Home</a>
+            <a class="navbar-brand" href="{% url 'projects:home' %}">Home</a>
             <a class="navbar-brand" href="{% url 'projects:about_me' %}">About Me</a>
             <a class="navbar-brand" href="{% url 'projects:all_projects' %}">Projects</a>
         </nav>
     </div>
-    <div class="container-fluid" id="door-container">
-        <div class="door">
-            <div class="door-front">
-            <div class="knob"></div>
-            </div>
-            <div class="door-back">
-            <div class="rack"></div>
-            <div class="hat"></div>
-            <div class="jacket"></div>
-            </div>
-            <div class="door-mat"></div>
-        </div>
-    </div>
-            {% block content %}
 
-            {% endblock %}
-        </div>
-    </div>
+    {% block content %}
+
+    
+    {% endblock %}
 </body>
 </html>
