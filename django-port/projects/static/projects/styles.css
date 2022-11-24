@@ -28,7 +28,7 @@
     transform-origin: left;
     box-shadow: 30px 0 50px rgba(0,0,0,0.2);
     position: absolute;
-    background-color: #924500;
+    background-color: #532700;
     z-index:1;
     transition: .5s;
     border-radius: 50%;
@@ -39,10 +39,10 @@
     position: absolute;
     background: repeating-linear-gradient(
       to right,
-      #b05500,
-      #b05500 30px,
-      #894301 50px,
-      #894301 50px
+      #2d543a,
+      #2d543a 30px,
+      #1f3927 50px,
+      #1f3927 50px
     );
     min-width: 360px;
     min-height: 360px;
