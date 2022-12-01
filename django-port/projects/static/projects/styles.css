@@ -2,6 +2,11 @@
     background-color: aquamarine;
 }
 
+#main-container {
+  background-color: #9d741a;
+  box-sizing: content-box;
+}
+
 #door-container {
     display: flex;
     align-items: center;
@@ -21,6 +26,7 @@
     border-radius: 50%;
     min-width: 150px;
     min-height: 150px;
+    flex-shrink: 1;
   }
   
   .door-front {
