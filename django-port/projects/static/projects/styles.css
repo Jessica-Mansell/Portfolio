@@ -5,6 +5,7 @@
 #main-container {
   width: 100%;
   box-sizing: content-box;
+  background: linear-gradient(0deg, rgba(255,230,152,1) 0%, rgba(7,214,10,0.9836309523809523) 100%);
 }
 
 #door-container {
@@ -15,6 +16,11 @@
     overflow: hidden;
     margin: auto;
   }
+      .no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
   
   .door {
     position: relative;
