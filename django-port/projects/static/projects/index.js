@@ -1,3 +1,6 @@
+
+// This is just a front-end redirect until I figure out the backend.
+// Trying to make the home page the default. Swap "projects" <--> "home"
 document.addEventListener('DOMContentLoaded', function() {
     load_home();
 })
