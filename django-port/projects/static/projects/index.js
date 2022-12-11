@@ -10,7 +10,19 @@ function load_home() {
 };
 
 // TODO: Write function for single page view detail for each project page
+function show_project(project) {
+    fetch(`/projects/${project}`)
+    .then(response => response.text())
+    .then(text => {
+        console.log(text);
+        document.querySelector('#project_view').innerHTML = text;
+    });
+}
 
-// TODO: Write function for about me single page
-
-// TODO: Write function for single page view of all projects
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector('button_more').forEach(button => {
+        button.onclick = function() {
+            show_project(this.dataset.project)
+        }
+    })
+})

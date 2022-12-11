@@ -1,6 +1,7 @@
 from http.client import HTTPResponse
 from projects.models import Project
 from django.shortcuts import render
+from django.views.generic import DetailView
 
 def about_me(request):
     return render(request, 'projects/about_me.html')
@@ -18,3 +19,5 @@ def project_detail(request, pk):
 
 def home(request):
     return render(request, 'projects/home.html')
+
+
