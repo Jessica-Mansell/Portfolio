@@ -4,8 +4,9 @@
 
 {% block content %}
 
-        <h1>Projects</h1>
-        <div class="row">
+        <h2>Projects</h2>
+        <!-- Add buttons for each project and remove the Read More buttons below -->
+        <div class="row" id="project_view">
         {% for project in projects %}
             <div class="col-md-4">
                 <div class="card mb-2">
@@ -21,3 +22,6 @@
         </div>
 
 {% endblock %}
+
+<!-- TODO: remove the detail.html page and replace it with a responsive view
+    Reference the Django mail app I made for class. The inbox.html is similar-->
