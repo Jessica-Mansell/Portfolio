@@ -12,10 +12,13 @@ def all_projects(request):
     return render(request, 'projects/all_projects.html', 
                     {'projects': projects})
 
-def project_detail(request, pk):
-    project = Project.objects.get(pk=pk)
-    return render(request, 'projects/detail.html', 
-                    {'project': project})
+class ProjectDetailView(DetailView):
+    model = Project
+    template_name = 'all_projects.html'
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(ProjectDetailView, self).get_context_data(*args, **kwargs)
+        return context
 
 def home(request):
     return render(request, 'projects/home.html')
